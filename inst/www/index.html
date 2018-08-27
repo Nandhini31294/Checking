@@ -111,7 +111,7 @@
 							
 							//read the value for 'filename'
 							var filename = $("#uploadFile").val();
-							
+							$('#progress').css("background-color", "#EAEAEA");
 							//perform the request
 							var req = ocpu.rpc("read_csv", {
 							filename : filename
@@ -162,7 +162,7 @@
 							<pre><code id="output"></code></pre>
                           </div>
 
-                          <div class="lds-dual-ring">Cleaning in progress</div>
+                          <div id="progress" class="lds-dual-ring">Cleaning in progress</div>
 
                         </div>
                       </li>
