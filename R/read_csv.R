@@ -8,7 +8,7 @@
 read_csv<-function(filename)
 {
   x<-read.csv(filename)
-  return("Read successfully")
+  return(x)
 }
 
 
